@@ -1,0 +1,16 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document 
+url-prefix("http://cruise."),
+url-prefix("http://cruise/"),
+url-prefix("http://go."),
+url-prefix("http://go/")
+
+{
+#agents .LostContact, .Missing{Background-color:red !important; color:white; font-weight: bold !important}
+#agents .Cancelled td{Background-color:#FF9900 !important; color:white; font-weight: bold !important}
+#agents .Building td{Background-color:#66FF33 !important; color:black; font-weight: bold !important}
+#agents .LostContact a, .Missing a, .Cancelled a {color:white !important; text-decoration: underline !important}
+#agents .Building a{color:black !important; text-decoration: underline !important}
+
+}
