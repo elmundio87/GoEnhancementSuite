@@ -1,0 +1,86 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document 
+ url-prefix("http://cruise.") ,
+ url-prefix("http://go."),
+ url-prefix("http://cruise/") ,
+ url-prefix("http://go/"),
+ url-prefix("http://newgo/"),
+ url-prefix("http://newgo.")
+{
+
+#pipelines .Failing, #pipelines .Building , .failing-stage, .building-stage, #stages a.stage_bar.Failing, #stages a.stage_bar.Building {
+
+    transform: translateZ(0);
+    
+    animation:myfirst 1s infinite ease-in-out alternate; /* W3C and Opera */
+
+    -moz-animation: opacity-pulse 1s infinite ease-in-out alternate, moving-bar 1s infinite linear; /* Firefox */
+    
+    -webkit-animation: opacity-pulse 1s infinite ease-in-out alternate, moving-bar 1s infinite linear; /* Safari and Chrome */
+    
+}
+
+@keyframes opacity-pulse
+
+  {
+
+from {opacity: 1}
+
+to {opacity: 0.66}
+
+	}
+
+	
+
+	@-moz-keyframes opacity-pulse /* Firefox */
+
+	{
+
+from {opacity: 1}
+
+to {opacity: 0.66}
+
+	}
+
+	@-webkit-keyframes opacity-pulse /* Safari and Chrome */
+
+	{
+
+from {opacity: 1}
+
+to {opacity: 0.66}
+	}
+
+	@-o-keyframes opacity-pulse /* Opera */
+
+	{
+
+
+from {opacity: 1}
+
+to {opacity: 0.66}
+
+	}
+	
+	@-moz-keyframes moving-bar /* Firefox */
+
+	{
+
+from {background-position: 0px 0px}
+
+to {background-position: 24px 0px}
+
+	}
+	
+	@-webkit-keyframes moving-bar /* Chrome */
+
+	{
+
+from {background-position: 0px 0px}
+
+to {background-position: 24px 0px}
+
+	}
+
+}
