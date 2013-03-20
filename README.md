@@ -1,7 +1,7 @@
-GoEnhancementSuite
+Go Enhancement Suite
 ==================
 
-For anyone that's interested, I've submitted a user style that I have created to userstyles.org that allows you to see much more information at a time than in the default theme for the GO web UI. By cutting out a lot of the white space via rearranging the pipeline groups into vertical lists, you can see a greater amount of pipelines simultaneously (IE. without scrolling) 
+For anyone that's interested, I've submitted a user style that I have created to userstyles.org that allows you to see much more information at a time than in the default theme for the GO CI web UI. By cutting out a lot of the white space via rearranging the pipeline groups into vertical lists, you can see a greater amount of pipelines simultaneously (IE. without scrolling) 
 
 This has been tested in Firefox 18 and Chrome 24 
 
